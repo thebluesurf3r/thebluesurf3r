@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap');
+
 html {
     display: sticky;
     position: relative;
     scroll-behavior: smooth;
-    padding: 0.4%;
+    padding: 0%;
     background-color: #0e0e0eda; /* Set a background color for the entire page */
 }
 
 body {
     margin: 0; /* Remove default margin to ensure a full-width layout */
-    font-family: 'Helvetica', sans-serif; /* Set a preferred font-family */
+    font-family: 'Open Sans', sans-serif; /* Set a preferred font-family */
     line-height: 1.61; /* Improve readability by setting line height */
     color: #333; /* Set a default text color */
+    font-weight: 400;
+    display: swap;
 }
-
 
   
 header {
@@ -61,9 +64,9 @@ a {
     text-align: center;
 }
 
-/*----------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------       sideBarDesign     --------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------*/
+/*              navigationbar                          ------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------*/
 
 html body.fade div#sidebar nav ul#sidebarUnorderedList li a i {
     display: inline-block;
@@ -123,7 +126,7 @@ html body.fade header#vyomDeepansh a h1 {
     display: inline-block;
     height: 44px;
     width: 100%;
-    inline-size: 55.5px;
+    inline-size: 55px;
     overflow: hidden;
     white-space: nowrap;
     margin: 1.61%;
@@ -131,11 +134,13 @@ html body.fade header#vyomDeepansh a h1 {
     font-size: 64.4px;
     color: #ffffff;
     transition: inline-size 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-image: url(../images/pexels-adrien-olichon-2387793.jpg);
-    background-size: 140%;
+    background-image: url(../images/planet-581239_1920.jpg);
+    background-size: 180%;
     opacity: 0.75;
-    scale: 1.61;
-    position: relative;
+    scale: 1.1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 html body.fade header#vyomDeepansh a h1::before {
@@ -156,17 +161,16 @@ html body.fade header#vyomDeepansh a h1:hover::before {
 }
 
 html body.fade header#vyomDeepansh a h1:hover {
-    inline-size: 93%;
+    inline-size: 100%;
     transition: inline-size 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.5s ease; /* Adjusted timing function and duration */
     opacity: 1;
     background-image: none;
     background-blend-mode: multiply;
     background: black; /* Adjust background color as needed */
+    transform: translate(-50%, -50%);
+
 
 }
-
-
-
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------       vyomDeepansh      --------------------------------------------------*/
@@ -181,6 +185,11 @@ html body.fade header#vyomDeepansh a h1 {
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------            resumeSectionTitle        -----------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------*/
+html body.fade div.container section#resumeSection{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
 
 html body.fade div.container section#resumeSection h2 strong{
     display: flex;
@@ -193,12 +202,11 @@ html body.fade div.container section#resumeSection h2 strong{
 /*----------------------------------------------------------------------------------------------------------------------------*/
 
 html body.fade div.container section#resumeSection h2 {
-        display: block;
-        background-color: black; /* Replace with your desired background color */
-        padding: 1.61%; /* Add padding for better spacing */
-        border-radius: 12.70px; /* Add rounded corners for a polished look */
-        text-align: center;
-    }
+    display: block;
+    background-color: black; /* Replace with your desired background color */
+    padding: 0.4%; /* Add padding for better spacing */
+    border-radius: 12.70px; /* Add rounded corners for a polished look */
+}
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------         resumeSectionDescription     -----------------------------------------*/
@@ -207,10 +215,10 @@ html body.fade div.container section#resumeSection h2 {
 html body.fade div.container section#resumeSection h3 {
         display: block;
         background-color: black; /* Replace with your desired background color */
-        padding: 1.61%; /* Add padding for better spacing */
+        padding: 0.4%; /* Add padding for better spacing */
+        margin: 1.61%;
         border-radius: 12.70px; /* Add rounded corners for a polished look */
-        text-align: center;
-    }
+}
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------*/
