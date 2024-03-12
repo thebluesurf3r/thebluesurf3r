@@ -1,6 +1,4 @@
 from django.db import models
 
-class Product():
-    title       = models.TextField()
-    description = models.TextField()
-    price       = models.TextField()
+class UserProfile(models.Model):
+    profile_pic = models.ImageField(upload_to='profile_pics')  # Optional upload path
