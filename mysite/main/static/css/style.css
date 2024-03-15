@@ -122,13 +122,13 @@ html body.fade div#sidebar nav {
 html body.fade header#vyomDeepansh a h1 {
     display: inline-block;
     width: 100%;
-    inline-size: 140px;
+    inline-size: 180px;
     overflow: hidden;
     white-space: nowrap;
     margin: 1.61%;
     padding: 1.61%;
     font-size: 64.4px;
-    color: #c6caff;
+    color: #000000;
     transition: inline-size 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
     background-image: url(../images/planet-581239_1920.jpg);
     background-size: 180%;
@@ -153,7 +153,7 @@ html body.fade header#vyomDeepansh a h1::before {
 
 html body.fade header#vyomDeepansh a h1:hover::before {
     opacity: 0; /* Make the overlay fully transparent on hover */
-    color: rgba(209, 209, 209, 0.932);
+    color: rgb(209, 209, 209);
 }
 
 html body.fade header#vyomDeepansh a h1:hover {
@@ -219,4 +219,25 @@ html body.fade div.container section#resumeSection h3 {
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
+/*       descriptionDetails      ---------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------*/
+
+body.fade div.container section#resumeSection h3 {
+    transition: transform 0.3s ease;
+}
+
+body.fade div.container section#resumeSection h3:hover {
+    transform: scaleX(1.1);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*       descriptionHeaders      ---------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+html body.fade div.container section#resumeSection h2 strong {
+    transition: transform 0.3s ease;
+}
+
+html body.fade div.container section#resumeSection h2 strong:hover {
+    transform: scaleX(1.1);
+}
