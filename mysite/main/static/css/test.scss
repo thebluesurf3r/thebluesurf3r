@@ -1,0 +1,356 @@
+// Define variables
+$primary-color: #131a7a;
+$background-color: #000000;
+
+// Base styles
+html {
+    scroll-behavior: smooth;
+    padding: 0%;
+    background-color: $background-color;
+}
+
+body {
+    margin: 0; // Remove default margin to ensure a full-width layout
+    font-family: 'Open Sans', sans-serif; // Set a preferred font-family
+    line-height: 1.61; // Improve readability by setting line height
+    color: #ffffff; // Set a default text color
+    background-color: $background-color;
+    font-weight: 400;
+    display: inline-block;
+
+    &.fade {
+        animation: fadeIn 1s ease;
+    }
+}
+
+header {
+    padding: 1.61%;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight: 322;
+}
+
+h2 {
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-variant: normal;
+    font-weight: 322;
+}
+
+h3 {
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-variant: normal;
+    font-weight: 322;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 322;
+    text-align: center;
+}
+
+/* Style the main content */
+
+.main-content {
+    padding: 5%;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+// Define variables if needed
+$progress-bar-background: #000d47;
+$progress-bar-container-background: #686868;
+$progress-bar-border-radius: 24px;
+$progress-bar-height: 20px;
+$progress-bar-hover-background: #0044ff; // Define hover background color
+
+// SCSS for progress bars
+.progress-bar-container {
+    background-color: $progress-bar-container-background;
+    border-radius: $progress-bar-border-radius;
+    height: $progress-bar-height;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    .progress-bar {
+        background-color: $progress-bar-background;
+        height: 100%;
+
+        // Hover effect
+        &:hover {
+            background-color: $progress-bar-hover-background;
+        }
+    }
+}
+
+// Base styles
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  // Footer styles
+  .footer {
+    background-color: #222222;
+    color: #fff;
+    padding: 20px;
+  
+    nav {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          display: inline;
+          margin-right: 20px;
+  
+          a {
+            color: inherit; // Inherit color from footer
+            text-decoration: none;
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }  
+
+// Define variables
+$icon-color: rgba(209, 209, 209, 0.932);
+$hover-scale: 1.61; // Scale factor for hover effect
+$hover-opacity: 1; // Opacity for hover effect
+$hover-color: rgb(322, 322, 161); // Color for hover effect
+
+// Mixin for icon hover effect
+@mixin icon-hover {
+  transition: transform 0.3s ease; // Add a transition for a smooth hover effect
+
+  &:hover {
+    transform: scale($hover-scale); // Use defined variable for hover scale
+    opacity: $hover-opacity; // Use defined variable for hover opacity
+    color: $hover-color; // Use defined variable for hover color
+  }
+}
+
+// Apply mixin and variables
+html {
+  body {
+    &.fade {
+      div#sidebar {
+        nav {
+          ul#sidebarUnorderedList {
+            li {
+              a {
+                i {
+                  display: inline-block;
+                  color: $icon-color;
+
+                  @include icon-hover; // Apply the mixin for hover effect
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Define variables
+$sidebar-list-padding: 9%;
+$sidebar-list-item-size: 64.4px;
+$sidebar-list-item-margin: 1.61%;
+$sidebar-list-item-color: #ffffff;
+$sidebar-list-item-padding: 3.22%;
+$sidebar-list-item-border-radius: 24px;
+$hover-scale: 1.61; // Scale factor for hover effect
+
+// Mixin for sidebar list item styles
+@mixin sidebar-list-item {
+  font-size: $sidebar-list-item-size;
+  display: inline-block;
+  margin: $sidebar-list-item-margin;
+  color: $sidebar-list-item-color;
+  padding: $sidebar-list-item-padding;
+  border-radius: $sidebar-list-item-border-radius;
+  position: relative; // Add position relative for positioning the pseudo-element
+
+  a {
+    transition: transform 0.3s ease; // Add a transition for a smooth hover effect
+  }
+
+  &:hover {
+    a {
+      transform: scale($hover-scale); // Use defined variable for hover scale
+      opacity: 1; // 100%
+      color: rgb(322, 322, 161);
+    }
+  }
+}
+
+// Apply mixin and variables
+html {
+  body {
+    &.fade {
+      div#sidebar {
+        nav {
+          text-align: center;
+
+          ul#sidebarUnorderedList {
+            list-style: none;
+            padding: $sidebar-list-padding;
+            margin: 0;
+
+            li {
+              @include sidebar-list-item;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Define variables
+$header-background-color: rgba(0, 0, 255, 0.164);
+$header-border-radius: 24px;
+
+// Mixin for header h1 styles
+@mixin header-h1 {
+  display: absolute;
+  width: 100%;
+  inline-size: 140px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 1.61%;
+  padding: 1.61%;
+  font-size: 64.4px;
+  color: #ffffff;
+  transition: inline-size 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url(../images/planet-581239_1920.jpg);
+  background-size: 150%;
+  opacity: 0.75;
+  scale: 1.0;
+  position: absolute;
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75; /* Adjust overlay opacity */
+    transition: opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1); /* Transition for overlay opacity */
+    background-image: url(../images/pexels-adrien-olichon-2387793.jpg);
+  }
+
+  &:hover {
+    inline-size: 100%;
+    transition: inline-size 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.5s ease; /* Adjusted timing function and duration */
+    opacity: 1;
+    background-image: none;
+    background-blend-mode: multiply;
+    color: rgb(322, 322, 161);
+    text-align: center;
+
+    &::before {
+      opacity: 0; /* Make the overlay fully transparent on hover */
+      color: rgb(209, 209, 209);
+    }
+  }
+
+  // Add padding for better spacing
+  // Add rounded corners for a polished look
+  padding: 1.61%;
+  border-radius: 24px;
+  text-align: center;
+}
+
+// Apply mixin and variable
+html {
+  body {
+    &.fade {
+      header#vyomDeepansh {
+        a {
+          h1 {
+            @include header-h1;
+          }
+        }
+
+        main.main-content {
+          background-color: $header-background-color;
+          border-radius: $header-border-radius;
+        }
+      }
+    }
+  }
+}
+
+
+$content-background-color: #1c2eb8;
+$content-border-radius: 24px;
+$content-padding: 0.4%;
+$section-background-color: rgb(41, 13, 13);
+$section-border-radius: 24px;
+$section-width: 99.2%;
+
+@mixin content-section {
+    background-color: $content-background-color;
+    border-radius: $content-border-radius;
+    padding: $content-padding;
+  
+    h2 {
+      background-color: $section-background-color;
+      border-radius: $section-border-radius;
+      padding: $content-padding;
+      width: $section-width;
+    }
+  
+    ul li {
+      color: white;
+    }
+  }
+
+  html {
+    body {
+      &.fade {
+        header#vyomDeepansh {
+          main.main-content {
+            section#about.section,
+            section#technical-skills.section,
+            section#professional-skills.section,
+            section#work-experience.section,
+            section#certification-awards.section,
+            section#education.section {
+              @include content-section;
+            }
+          }
+        }
+      }
+    }
+  }
+  

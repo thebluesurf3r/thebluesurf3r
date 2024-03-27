@@ -1,0 +1,383 @@
+// Define variables
+$primary-color: #131a7a;
+$background-color: #000000;
+
+// Base styles
+html {
+    scroll-behavior: smooth;
+    padding: 0%;
+    background-color: $background-color; // Set a background color for the entire page
+}
+
+body {
+    margin: 0; // Remove default margin to ensure a full-width layout
+    font-family: 'Open Sans', sans-serif; // Set a preferred font-family
+    line-height: 1.61; // Improve readability by setting line height
+    color: #000000; // Set a default text color
+    background-color: $background-color;
+    font-weight: 400;
+    display: inline-block;
+
+    &.fade {
+        animation: fadeIn 1s ease;
+    }
+}
+
+header {
+    padding: 1.61%;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight: 322;
+}
+
+h2 {
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-variant: normal;
+    font-weight: 322;
+}
+
+h3 {
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-variant: normal;
+    font-weight: 322;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 322;
+    text-align: center;
+}
+
+/* Style the main content */
+
+.main-content {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+// Define variables if needed
+$progress-bar-background: #000d47;
+$progress-bar-container-background: #686868;
+$progress-bar-border-radius: 12px;
+$progress-bar-height: 20px;
+$progress-bar-hover-background: #0044ff; // Define hover background color
+
+// SCSS for progress bars
+.progress-bar-container {
+    background-color: $progress-bar-container-background;
+    border-radius: $progress-bar-border-radius;
+    height: $progress-bar-height;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    .progress-bar {
+        background-color: $progress-bar-background;
+        height: 100%;
+
+        // Hover effect
+        &:hover {
+            background-color: $progress-bar-hover-background;
+        }
+    }
+}
+
+// Style bullet lists
+.section {
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+}
+
+// Style links
+a {
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Style footer
+.footer {
+    background-color: #222222;
+    color: #fff;
+    padding: 20px;
+
+    nav {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline;
+                margin-right: 20px;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+html {
+    body {
+        &.fade {
+            div#sidebar {
+                nav {
+                    ul#sidebarUnorderedList {
+                        li {
+                            a {
+                                i {
+                                    display: inline-block;
+                                    color: rgba(209, 209, 209, 0.932);
+
+                                    // Add the following lines for the hover effect
+                                    transition: transform 0.3s ease; // Add a transition for a smooth hover effect
+
+                                    &:hover {
+                                        transform: scale(1.61); // Magnify the icon 2x and center it horizontally on hover
+                                        opacity: 1; // 100%
+                                        color: rgb(322, 322, 161);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+html {
+    body {
+        &.fade {
+            div#sidebar {
+                nav {
+                    text-align: center;
+
+                    ul#sidebarUnorderedList {
+                        list-style: none;
+                        padding: 9%;
+                        margin: 0;
+
+                        li {
+                            font-size: 64.4px;
+                            display: inline-block;
+                            margin: 1.61%;
+                            color: #ffffff;
+                            padding: 3.22%;
+                            border-radius: 24px;
+                            position: relative; // Add position relative for positioning the pseudo-element
+
+                            a {
+                                // Add the following lines for the hover effect
+                                transition: transform 0.3s ease; // Add a transition for a smooth hover effect
+                            }
+
+                            &:hover {
+                                a {
+                                    transform: scale(1.61); // Magnify the icon 2x and center it horizontally on hover
+                                    opacity: 1; // 100%
+                                    color: rgb(322, 322, 161);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+html {
+    body {
+        &.fade {
+            header#vyomDeepansh {
+                a {
+                    h1 {
+                        display: flex;
+                        width: 100%;
+                        inline-size: 140px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        margin: 1.61%;
+                        padding: 1.61%;
+                        font-size: 64.4px;
+                        color: #ffffff;
+                        transition: inline-size 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+                        background-image: url(../images/planet-581239_1920.jpg);
+                        background-size: 150%;
+                        opacity: 0.75;
+                        scale: 1.0;
+                        position: absolute;
+
+                        &::before {
+                            content: "";
+                            position: relative;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            opacity: 0.75; /* Adjust overlay opacity */
+                            transition: opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1); /* Transition for overlay opacity */
+                            background-image: url(../images/pexels-adrien-olichon-2387793.jpg);
+                        }
+
+                        &:hover {
+                            inline-size: 100%;
+                            transition: inline-size 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.5s ease; /* Adjusted timing function and duration */
+                            opacity: 1;
+                            background-image: none;
+                            background-blend-mode: multiply;
+                            color: rgb(322, 322, 161);
+                            text-align: center;
+
+                            &::before {
+                                opacity: 0; /* Make the overlay fully transparent on hover */
+                                color: rgb(209, 209, 209);
+                            }
+                        }
+
+                        // Add padding for better spacing
+                        // Add rounded corners for a polished look
+                        padding: 1.61%;
+                        border-radius: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+html {
+    body {
+        &.fade {
+            header#vyomDeepansh {
+                main.main-content {
+                    background-color: rgba(0, 0, 255, 0.164);
+                    border-radius: 24px;
+                }
+            }
+        }
+    }
+}
+
+html {
+    body {
+        &.fade {
+            header#vyomDeepansh {
+                main.main-content {
+                    section#about.section {
+                        h2 {
+                            background-color: rgb(41, 13, 13);
+                            border-radius: 12px;
+                            padding: 0.4%;
+                            width: 99.2%;
+                        }
+                        p {
+                            color: #ffffff;
+                        }
+                        background-color: #86eb03;
+                        border-radius: 24px;
+                        padding: 0.4%;
+                    }
+                    section#technical-skills.section {
+                        h2 {
+                            background-color: rgb(41, 13, 13);
+                            border-radius: 12px;
+                            padding: 0.4%;
+                            width: 99.2%;
+                        }
+                        ul li {
+                            ul li {
+                                color: white;
+                            }
+                        }
+                        background-color: #86eb03;
+                        border-radius: 24px;
+                        padding: 0.4%;
+                    }
+                    section#professional-skills.section {
+                        h2 {
+                            background-color: rgb(41, 13, 13);
+                            border-radius: 12px;
+                            padding: 0.4%;
+                            width: 99.2%;
+                        }
+                        ul li {
+                            color: #fff;
+                        }
+                        background-color: #86eb03;
+                        border-radius: 24px;
+                        padding: 0.4%;
+                    }
+                    section#work-experience.section {
+                        h2 {
+                            background-color: rgb(41, 13, 13);
+                            border-radius: 12px;
+                            padding: 0.4%;
+                            width: 99.2%;
+                        }
+                        ul li {
+                            color: white;
+                        }
+                        background-color: #86eb03;
+                        border-radius: 24px;
+                        padding: 0.4%;
+                    }
+                    section#certification-awards.section {
+                        h2 {
+                            background-color: rgb(41, 13, 13);
+                            border-radius: 12px;
+                            padding: 0.4%;
+                            width: 99.2%;
+                        }
+                        ul li {
+                            color: white;
+                        }
+                        background-color: #86eb03;
+                        border-radius: 24px;
+                        padding: 0.4%;
+                    }
+                    section#education.section {
+                        h2 {
+                            background-color: rgb(41, 13, 13);
+                            border-radius: 12px;
+                            padding: 0.4%;
+                            width: 99.2%;
+                        }
+                        ul li {
+                            color: white;
+                        }
+                        background-color: #86eb03;
+                        border-radius: 24px;
+                        padding: 0.4%;
+                    }
+                }
+            }
+        }
+    }
+}

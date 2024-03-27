@@ -1,0 +1,229 @@
+html {
+  scroll-behavior: smooth;
+  padding: 0%;
+  background-color: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.61;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 400;
+  display: inline-block;
+}
+body.fade {
+  animation: fadeIn 1s ease;
+}
+
+header {
+  padding: 1.61%;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-weight: 322;
+}
+
+h2 {
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-variant: normal;
+  font-weight: 322;
+}
+
+h3 {
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-variant: normal;
+  font-weight: 322;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 322;
+  text-align: center;
+}
+
+/* Style the main content */
+.main-content {
+  padding: 5%;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.progress-bar-container {
+  background-color: #686868;
+  border-radius: 24px;
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.progress-bar-container .progress-bar {
+  background-color: #000d47;
+  height: 100%;
+}
+.progress-bar-container .progress-bar:hover {
+  background-color: #0044ff;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #222222;
+  color: #fff;
+  padding: 20px;
+}
+.footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+.footer nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer nav ul li a:hover {
+  text-decoration: underline;
+}
+
+html body.fade div#sidebar nav ul#sidebarUnorderedList li a i {
+  display: inline-block;
+  color: rgba(209, 209, 209, 0.932);
+  transition: transform 0.3s ease;
+}
+html body.fade div#sidebar nav ul#sidebarUnorderedList li a i:hover {
+  transform: scale(1.61);
+  opacity: 1;
+  color: rgb(255, 255, 161);
+}
+
+html body.fade div#sidebar nav {
+  text-align: center;
+}
+html body.fade div#sidebar nav ul#sidebarUnorderedList {
+  list-style: none;
+  padding: 9%;
+  margin: 0;
+}
+html body.fade div#sidebar nav ul#sidebarUnorderedList li {
+  font-size: 64.4px;
+  display: inline-block;
+  margin: 1.61%;
+  color: #ffffff;
+  padding: 3.22%;
+  border-radius: 24px;
+  position: relative;
+}
+html body.fade div#sidebar nav ul#sidebarUnorderedList li a {
+  transition: transform 0.3s ease;
+}
+html body.fade div#sidebar nav ul#sidebarUnorderedList li:hover a {
+  transform: scale(1.61);
+  opacity: 1;
+  color: rgb(255, 255, 161);
+}
+
+html body.fade header#vyomDeepansh a h1 {
+  display: absolute;
+  width: 100%;
+  inline-size: 140px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 1.61%;
+  padding: 1.61%;
+  font-size: 64.4px;
+  color: #ffffff;
+  transition: inline-size 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url(../images/planet-581239_1920.jpg);
+  background-size: 150%;
+  opacity: 0.75;
+  scale: 1;
+  position: absolute;
+  padding: 1.61%;
+  border-radius: 24px;
+  text-align: center;
+}
+html body.fade header#vyomDeepansh a h1::before {
+  content: "";
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.75; /* Adjust overlay opacity */
+  transition: opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1); /* Transition for overlay opacity */
+  background-image: url(../images/pexels-adrien-olichon-2387793.jpg);
+}
+html body.fade header#vyomDeepansh a h1:hover {
+  inline-size: 100%;
+  transition: inline-size 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.5s ease; /* Adjusted timing function and duration */
+  opacity: 1;
+  background-image: none;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 161);
+  text-align: center;
+}
+html body.fade header#vyomDeepansh a h1:hover::before {
+  opacity: 0; /* Make the overlay fully transparent on hover */
+  color: rgb(209, 209, 209);
+}
+html body.fade header#vyomDeepansh main.main-content {
+  background-color: rgba(0, 0, 255, 0.164);
+  border-radius: 24px;
+}
+
+html body.fade header#vyomDeepansh main.main-content section#about.section,
+html body.fade header#vyomDeepansh main.main-content section#technical-skills.section,
+html body.fade header#vyomDeepansh main.main-content section#professional-skills.section,
+html body.fade header#vyomDeepansh main.main-content section#work-experience.section,
+html body.fade header#vyomDeepansh main.main-content section#certification-awards.section,
+html body.fade header#vyomDeepansh main.main-content section#education.section {
+  background-color: #1c2eb8;
+  border-radius: 24px;
+  padding: 0.4%;
+}
+html body.fade header#vyomDeepansh main.main-content section#about.section h2,
+html body.fade header#vyomDeepansh main.main-content section#technical-skills.section h2,
+html body.fade header#vyomDeepansh main.main-content section#professional-skills.section h2,
+html body.fade header#vyomDeepansh main.main-content section#work-experience.section h2,
+html body.fade header#vyomDeepansh main.main-content section#certification-awards.section h2,
+html body.fade header#vyomDeepansh main.main-content section#education.section h2 {
+  background-color: rgb(41, 13, 13);
+  border-radius: 24px;
+  padding: 0.4%;
+  width: 99.2%;
+}
+html body.fade header#vyomDeepansh main.main-content section#about.section ul li,
+html body.fade header#vyomDeepansh main.main-content section#technical-skills.section ul li,
+html body.fade header#vyomDeepansh main.main-content section#professional-skills.section ul li,
+html body.fade header#vyomDeepansh main.main-content section#work-experience.section ul li,
+html body.fade header#vyomDeepansh main.main-content section#certification-awards.section ul li,
+html body.fade header#vyomDeepansh main.main-content section#education.section ul li {
+  color: white;
+}
+
+/*# sourceMappingURL=test.css.map */

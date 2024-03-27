@@ -10,7 +10,7 @@
     <meta name="author" content="Vyom Deepansh">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">   
@@ -23,7 +23,6 @@
         <a href="{% url 'home' %}"> <h1 class="animated-text">Vyom Deepansh</h1></a>
         
 
-    </header>
 
     <div id="sidebar">
         <nav>
@@ -39,6 +38,8 @@
     </div>
 
     {% block content %} {% endblock %}
+    
+    {% block footer %} {% endblock %}
 
     </body>
     </html>

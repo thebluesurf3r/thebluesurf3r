@@ -5,14 +5,12 @@
 {% block title %}About Me{% endblock %}
 
 {% block content %}
-    
-<div class="container">
-<section id="resume">
-<h2>Technical Skills</h2>
-<ul id="resume_ul">
-    <h4><strong>Python Modules:</strong></h4>
-        <h6>
-            <ul id="subbullets">
+
+<main class="main-content">
+
+<section class="section" id="technical-skills">
+    <h2>Technical Skills</h2>
+        <h3>Python Modules:</h3>
                 <li><strong>Pipenv: </strong>Streamlined Python development workflow by using Pipenv to manage project's dependencies and virtual environment.</li>
                 <li><strong>Pandas: </strong>For descriptive and statistical analysis.</li>
                 <li><strong>Numpy: </strong>To efficiently analyze the data using powerful array manipulation functions, to identify trends and outliers.</li>
@@ -23,41 +21,29 @@
             </ul>
         </h6>
 
-    <h4><strong>Database Management:</strong></h4>
-        <h6>
-            <ul id="subbullets">
+            <h3>Database Management:</h3>
                 <li><strong>MySQL: </strong>Powerful query capabilities to extract and analyze customer purchase history, identifying valuable insights for marketing campaigns.</li>
                 <li><strong>BigQuery: </strong>Massive data processing capabilities to analyze millions of customer clicks and impressions.</li>
             </ul>
-        </h6>
 
-    <h4><strong>Data Visualization:</strong></h4>
-        <h6>
-            <ul id="subbullets">
+            <h3>Data Visualization:</h3>
                 <li><strong>Looker Studio: </strong>To create interactive dashboards that provided real-time insights into campaign performance to optimize marketing strategies for maximum impact.</li>
                 <li><strong>Tableau/Power BI: </strong>To track key performance indicators (KPIs) in real-time, enabling us to make data-driven decisions about ongoing campaigns.</li>
             </ul>
-        </h6>
 
-    <h4><strong>Web Development:</strong></h4>
-        <h6>
-            <ul id="subbullets">
+            <h3>Web Development:</h3>
                 <li><strong>HTML: </strong>Meticulously crafted this website's structure, ensuring a well-organized and easy-to-navigate user experience.</li>
                 <li><strong>CSS: </strong>To achieve a sleek and modern aesthetic, I employed advanced CSS techniques like transitions and animations.</li>
                 <li><strong>JavaScript: </strong> Built dynamic web applications entirely using Javascript, to manipulate the Document Object Model (DOM) to create a rich and responsive user interface.</li>
                 <li><strong>Django: </strong>Built a dynamic e-commerce platform, leveraging its powerful framework to handle user accounts, product listings, and secure online transactions.</li>
             </ul>
-        </h6>    
 
-    <h4><strong>Google Stack:</strong></h4>
-        <h6>
-            <ul id="subbullets">
+            <h3>Google Stack:</h3>
                 <li><strong>Google Analytics 4: </strong>Analyzed user behavior on websites, gaining valuable insights into visitor interactions and optimizing the site's content for a more personalized and engaging user experience.</li>
                 <li><strong>Google Ads: </strong>Successfully boosted online businesses by strategically employing Paid Search campaigns, driving targeted traffic to websites and increasing overall sales.</li>
                 <li><strong>Google Tag Manager: </strong>Streamlined website analytics processes by implementing Google Tag Manager, which allows for efficient tracking of user interactions and simplifying the addition of new tags without the need for manual code updates.</li>
             </ul>
-        </h6>    
-</section>
+        </section>
 </div>
 
 {% endblock %}
